@@ -1,1 +1,74 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8fc;
+    color: #333;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    background: #fce4f1;
+    padding: 100px 20px;
+}
+
+#home h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+#home a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#shop {
+    background: white;
+}
+
+#shop div {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 25px;
+    background: #fff8fc;
+    border-radius: 15px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #333;
+    color: white;
+}
