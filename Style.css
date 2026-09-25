@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -8,136 +10,184 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fffafc;
-    color: #333;
+    background: #fdfaf6;
+    color: #171717;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
+/* NAVIGATION */
+
 header {
-    background: white;
-    padding: 25px 20px;
+    background: #fdfaf6;
+    padding: 30px 40px;
     text-align: center;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    border-bottom: 1px solid #e8ddd5;
 }
 
 header h1 {
-    margin: 0 0 20px;
-    font-size: 30px;
-    letter-spacing: 4px;
+    margin: 0 0 22px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 8px;
 }
 
 nav a {
-    color: #333;
+    color: #171717;
     text-decoration: none;
-    margin: 0 8px;
-    font-size: 15px;
+    margin: 0 15px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #b89470;
 }
 
-section {
-    padding: 80px 20px;
-    text-align: center;
-}
+/* STARTSEITE */
 
 #home {
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #f9e8f0;
+    text-align: center;
+    padding: 80px 20px;
+    background: #f7ebe9;
 }
 
 #home h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 58px;
+    font-weight: 500;
+    margin: 0 0 20px;
 }
 
 #home p {
-    max-width: 600px;
-    font-size: 18px;
-    line-height: 1.6;
+    max-width: 560px;
+    font-size: 15px;
+    line-height: 1.9;
 }
 
 #home a {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 28px;
-    background: #333;
-    color: white;
+    margin-top: 30px;
+    padding: 13px 30px;
+    border: 1px solid #171717;
+    color: #171717;
     text-decoration: none;
-    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 #home a:hover {
-    background: #555;
+    background: #171717;
+    color: white;
 }
 
+/* ALLGEMEINE BEREICHE */
+
+section {
+    padding: 100px 30px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 46px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+section > p {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    line-height: 1.8;
+}
+
+/* SCHMUCK */
+
 #schmuck {
-    background: white;
+    background: #fdfaf6;
 }
 
 .produkte {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 40px;
+    gap: 35px;
 }
 
 .produkt {
     width: 280px;
-    padding: 20px;
-    background: #fff8fb;
-    border-radius: 15px;
+    background: white;
+    padding-bottom: 25px;
 }
 
 .bild-platzhalter {
-    height: 280px;
+    height: 340px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: #f1dce6;
-    border-radius: 12px;
-    color: #777;
+    justify-content: center;
+    background: #eee3dc;
+    color: #8d8179;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 .produkt h3 {
-    margin-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 22px 10px 8px;
 }
 
 .produkt p {
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.7;
+    padding: 0 20px;
 }
+
+/* ÜBER UNS */
 
 #ueber-uns {
-    background: #f9e8f0;
+    background: #f7ebe9;
 }
 
-#ueber-uns p,
-#kontakt p {
+#ueber-uns p {
     max-width: 650px;
     margin: auto;
-    line-height: 1.7;
+    line-height: 2;
 }
+
+/* GALERIE */
 
 #galerie {
-    background: white;
+    background: #fdfaf6;
 }
+
+/* KONTAKT */
 
 #kontakt {
-    background: #f9e8f0;
+    background: #f7ebe9;
 }
 
+#kontakt p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 2;
+}
+
+/* FOOTER */
+
 footer {
-    padding: 30px;
+    padding: 35px;
     text-align: center;
-    background: #333;
-    color: white;
+    background: #171717;
+    color: #fdfaf6;
+    font-size: 11px;
+    letter-spacing: 1px;
 }
