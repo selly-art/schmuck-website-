@@ -2,72 +2,141 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #fff8fc;
+    background: #fffafc;
     color: #333;
 }
 
 header {
     background: white;
-    padding: 20px;
+    padding: 25px 20px;
     text-align: center;
     border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header h1 {
-    margin: 0 0 15px;
-    font-size: 32px;
-    letter-spacing: 3px;
+    margin: 0 0 20px;
+    font-size: 30px;
+    letter-spacing: 4px;
 }
 
 nav a {
-    text-decoration: none;
     color: #333;
-    margin: 0 10px;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
 #home {
-    background: #fce4f1;
-    padding: 100px 20px;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f9e8f0;
 }
 
 #home h2 {
-    font-size: 38px;
+    font-size: 42px;
     margin-bottom: 15px;
+}
+
+#home p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 #home a {
     display: inline-block;
-    margin-top: 20px;
-    padding: 14px 25px;
+    margin-top: 25px;
+    padding: 14px 28px;
     background: #333;
     color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
-#shop {
+#home a:hover {
+    background: #555;
+}
+
+#schmuck {
     background: white;
 }
 
-#shop div {
-    display: inline-block;
-    width: 250px;
-    margin: 15px;
-    padding: 25px;
-    background: #fff8fc;
+.produkte {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.produkt {
+    width: 280px;
+    padding: 20px;
+    background: #fff8fb;
     border-radius: 15px;
 }
 
+.bild-platzhalter {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1dce6;
+    border-radius: 12px;
+    color: #777;
+}
+
+.produkt h3 {
+    margin-top: 20px;
+}
+
+.produkt p {
+    line-height: 1.5;
+}
+
+#ueber-uns {
+    background: #f9e8f0;
+}
+
+#ueber-uns p,
+#kontakt p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+#galerie {
+    background: white;
+}
+
+#kontakt {
+    background: #f9e8f0;
+}
+
 footer {
-    padding: 25px;
+    padding: 30px;
     text-align: center;
     background: #333;
     color: white;
